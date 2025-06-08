@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Commander",
+  "version": "1.0",
+  "description": "Extension helps you register/write custom commands for any websites",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
